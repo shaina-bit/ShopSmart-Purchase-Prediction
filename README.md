@@ -1,11 +1,11 @@
-##ShopSmart: E-Commerce Purchase Prediction
-#Overview
+## ShopSmart: E-Commerce Purchase Prediction
+# Overview
 
 ShopSmart is a machine learning project focused on predicting whether a visitor to an e-commerce website will complete a purchase based on their browsing behavior during a session.
 
 The goal is to help businesses identify high-intent visitors, optimize marketing strategies, and improve conversion rates by leveraging data-driven insights.
 
-#Problem Statement
+# Problem Statement
 
 E-commerce platforms receive thousands of visitors daily, but only a fraction of them complete a purchase. Understanding customer behavior and predicting purchase intent can help businesses:
 
@@ -16,7 +16,7 @@ E-commerce platforms receive thousands of visitors daily, but only a fraction of
 
 This project builds a predictive model that determines whether a visitor is likely to make a purchase based on session-level browsing data.
 
-#Dataset
+# Dataset
 
 The dataset contains information from 12,330 unique user sessions collected over a one-year period.
 
@@ -45,7 +45,7 @@ Revenue
 True → Purchase Completed
 False → No Purchase
 
-#Project Workflow
+# Project Workflow
 -Data Understanding
 -Exploratory Data Analysis (EDA)
 -Data Preprocessing
@@ -56,7 +56,7 @@ False → No Purchase
 -Model Evaluation
 -Model Selection
 
-#Data Preprocessing
+# Data Preprocessing
 
 The following preprocessing techniques were applied:
 
@@ -66,7 +66,7 @@ The following preprocessing techniques were applied:
 - ColumnTransformer for combined preprocessing
 - Pipeline implementation for reproducible workflows
 
-#Machine Learning Models
+# Machine Learning Models
 Logistic Regression
 
 Used as a baseline classification model.
@@ -86,7 +86,7 @@ Advantages:
 -Handles feature interactions effectively
 -Performs well on structured tabular datasets
 
-#Hyperparameter Tuning
+# Hyperparameter Tuning
 
 Decision Tree hyperparameters were optimized using GridSearchCV with 5-Fold Cross Validation.
 
@@ -99,7 +99,7 @@ Evaluation Metric:
 
 -F1 Score
 
-#Model Evaluation
+# Model Evaluation
 
 Models were evaluated using:
 
@@ -112,7 +112,7 @@ Models were evaluated using:
 
 Since purchase prediction is an imbalanced classification problem, F1 Score was used as the primary evaluation metric.
 
-#Results
+# Results
 
 Model Comparison:
 
@@ -137,7 +137,7 @@ Hyperparameter tuning further improved the model's performance through cross-val
 -Scikit-Learn
 -Jupyter Notebook
 
-#Key Learnings
+# Key Learnings
 
 Through this project, I learned:
 
@@ -151,7 +151,7 @@ Through this project, I learned:
 -Cross-validation
 -Evaluating imbalanced classification problems using F1 Score
 
-#Future Improvements
+# Future Improvements
 
 -Random Forest Classifier
 -XGBoost
@@ -160,7 +160,7 @@ Through this project, I learned:
 -Model deployment using Streamlit
 -Real-time purchase intent prediction dashboard
 
-#Author
+# Author
 
 Shaina Noushad
 
