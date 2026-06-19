@@ -23,22 +23,22 @@ The dataset contains information from 12,330 unique user sessions collected over
 Each session includes a combination of:
 
 Numerical Features
--Administrative Duration
--Informational Duration
--Product Related Duration
--Bounce Rates
--Exit Rates
--Page Values
--Special Day Score
+- Administrative Duration
+- Informational Duration
+- Product Related Duration
+- Bounce Rates
+- Exit Rates
+- Page Values
+- Special Day Score
 
 Categorical Features
--Month
--Visitor Type
--Weekend
--Operating System
--Browser
--Region
--Traffic Type
+- Month
+- Visitor Type
+- Weekend
+- Operating System
+- Browser
+- Region
+- Traffic Type
 
 Target Variable
 Revenue
@@ -46,25 +46,25 @@ True → Purchase Completed
 False → No Purchase
 
 # Project Workflow
--Data Understanding
--Exploratory Data Analysis (EDA)
--Data Preprocessing
--Feature Engineering
--Train-Test Split using Stratification
--Model Building
--Hyperparameter Tuning
--Model Evaluation
--Model Selection
+- Data Understanding
+- Exploratory Data Analysis (EDA)
+- Data Preprocessing
+- Feature Engineering
+- Train-Test Split using Stratification
+- Model Building
+- Hyperparameter Tuning
+- Model Evaluation
+- Model Selection
 
 # Data Preprocessing
 
 The following preprocessing techniques were applied:
 
-- Missing value inspection
-- Numerical feature scaling using StandardScaler
-- Categorical feature encoding using OneHotEncoder
-- ColumnTransformer for combined preprocessing
-- Pipeline implementation for reproducible workflows
+-  Missing value inspection
+-  Numerical feature scaling using StandardScaler
+-  Categorical feature encoding using OneHotEncoder
+-  ColumnTransformer for combined preprocessing
+-  Pipeline implementation for reproducible workflows
 
 # Machine Learning Models
 Logistic Regression
@@ -73,8 +73,8 @@ Used as a baseline classification model.
 
 Advantages:
 
--Fast and interpretable
--Strong baseline for binary classification
+- Fast and interpretable
+- Strong baseline for binary classification
 
 Decision Tree Classifier
 
@@ -82,9 +82,9 @@ Used to capture non-linear relationships and complex decision boundaries in cust
 
 Advantages:
 
--Easy to interpret
--Handles feature interactions effectively
--Performs well on structured tabular datasets
+- Easy to interpret
+- Handles feature interactions effectively
+- Performs well on structured tabular datasets
 
 # Hyperparameter Tuning
 
@@ -92,23 +92,23 @@ Decision Tree hyperparameters were optimized using GridSearchCV with 5-Fold Cros
 
 Parameters tuned:
 
--max_depth
--min_samples_leaf
+- max_depth
+- min_samples_leaf
 
 Evaluation Metric:
 
--F1 Score
+- F1 Score
 
 # Model Evaluation
 
 Models were evaluated using:
 
--Accuracy
--Precision
--Recall
--F1 Score
--Confusion Matrix
--Classification Report
+- Accuracy
+- Precision
+- Recall
+- F1 Score
+- Confusion Matrix
+- Classification Report
 
 Since purchase prediction is an imbalanced classification problem, F1 Score was used as the primary evaluation metric.
 
@@ -117,8 +117,8 @@ Since purchase prediction is an imbalanced classification problem, F1 Score was 
 Model Comparison:
 
 Model	Purpose
-Logistic Regression	- Baseline Model
-Decision Tree	Final - Selected Model
+- Logistic Regression	-Baseline Model
+- Decision Tree	Final -Selected Model
 
 Best Model
 
@@ -129,36 +129,36 @@ The Decision Tree outperformed Logistic Regression in terms of F1 Score and was 
 Hyperparameter tuning further improved the model's performance through cross-validation.
 
 #Technologies Used
--Python
--Pandas
--NumPy
--Matplotlib
--Seaborn
--Scikit-Learn
--Jupyter Notebook
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-Learn
+- Jupyter Notebook
 
 # Key Learnings
 
 Through this project, I learned:
 
--Handling mixed numerical and categorical features
--Building preprocessing pipelines
--Feature scaling and encoding
--Stratified train-test splitting
--Logistic Regression
--Decision Trees
--Hyperparameter tuning using GridSearchCV
--Cross-validation
--Evaluating imbalanced classification problems using F1 Score
+- Handling mixed numerical and categorical features
+- Building preprocessing pipelines
+- Feature scaling and encoding
+- Stratified train-test splitting
+- Logistic Regression
+- Decision Trees
+- Hyperparameter tuning using GridSearchCV
+- Cross-validation
+- Evaluating imbalanced classification problems using F1 Score
 
 # Future Improvements
 
--Random Forest Classifier
--XGBoost
--Feature importance analysis
--Advanced feature engineering
--Model deployment using Streamlit
--Real-time purchase intent prediction dashboard
+- Random Forest Classifier
+- XGBoost
+- Feature importance analysis
+- Advanced feature engineering
+- Model deployment using Streamlit
+- Real-time purchase intent prediction dashboard
 
 # Author
 
